@@ -9,47 +9,85 @@
   <body>
     <div class="wrapper">
       <div class="left">
+        <img class="left-fon" src="img/image1.jpg" alt="" />
         <div class="logo"><img src="img/odin-lined.png" alt="logo" />Odin</div>
+        <p class="left-link">
+          Photo by
+          <a
+            target="_blank"
+            href="http://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
+            >Halie West</a
+          >
+          on
+          <a
+            target="_blank"
+            href="http://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
+            >Unsplash</a
+          >
+        </p>
       </div>
       <div class="right">
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
-          debitis eius accusantium optio. At totam illo quae incidunt animi
-          fugit accusantium excepturi quo? Dicta quia impedit rerum optio
-          corrupti culpa!
-        </p>
-        <b>You <i>know</i> you want to.</b>
-        <form action="#" class="form">
-          <h2>Let,s do this!</h2>
-          <div class="form__content-lines">
-            <div class="line">
-              <label for="">First Name</label>
-              <input type="text" name="first-name" />
+        <div class="right__content">
+          <p class="right__content-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perferendis debitis eius accusantium optio. At totam illo quae
+            incidunt animi fugit accusantium excepturi quo? Dicta quia impedit
+            rerum optio corrupti culpa!
+          </p>
+          <p class="right__content-subtext">You <i>know</i> you want to.</p>
+          <form action="#" class="form">
+            <div class="form__content">
+              <h2>Let's do this!</h2>
+              <div class="form__content-lines">
+                <div class="line">
+                  <label for="first-name">First Name</label>
+                  <input
+                    required
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                  />
+                </div>
+                <div class="line">
+                  <label for="last-name">Last Name</label>
+                  <input required type="text" id="last-name" name="last-name" />
+                </div>
+                <div class="line">
+                  <label for="email">Email</label>
+                  <input required type="email" id="email" name="email" />
+                </div>
+                <div class="line">
+                  <label for="phone">Phone number</label>
+                  <input required type="tel" id="phone" name="phone" />
+                </div>
+                <div class="line">
+                  <label for="password">Password</label>
+                  <input
+                    minlength="4"
+                    maxlength="20"
+                    required
+                    type="password"
+                    id="password"
+                    name="password"
+                  />
+                </div>
+                <div class="line">
+                  <label for="conf-password">Confirm Password</label>
+                  <input
+                    required
+                    type="password"
+                    id="conf-password"
+                    name="confirm-password"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="line">
-              <label for="">Last Name</label>
-              <input type="text" name="last-name" />
+            <div class="form__submit">
+              <button type="submit">Create account</button>
+              <p>Already have an account? <a href="#">Log in</a></p>
             </div>
-            <div class="line">
-              <label for="">Email</label>
-              <input type="email" name="email" />
-            </div>
-            <div class="line">
-              <label for="">Phone number</label>
-              <input type="number" name="phone" />
-            </div>
-            <div class="line">
-              <label for="">Password</label>
-              <input type="password" name="password" />
-            </div>
-            <div class="line">
-              <label for="">Confirm Password</label>
-              <input type="password" name="confirm-password" />
-            </div>
-          </div>
-          <button type="submit">Create account</button>
-          <p>Already have an account? <a href="#">Log in</a></p>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </body>
